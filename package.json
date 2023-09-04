@@ -1,12 +1,14 @@
 {
   "name": "@ibti-tech",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "build": "tsup src/@ibti/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/@ibti/index.ts --format cjs,esm --dts --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -41,6 +43,20 @@
     "autoprefixer": "^10.4.15",
     "eslint-plugin-storybook": "^0.6.13",
     "postcss": "^8.4.29",
-    "storybook": "^7.4.0"
-  }
+    "storybook": "^7.4.0",
+    "tsup": "^7.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NinjaAzul/ibti-design-system-libs.git"
+  },
+  "author": {
+    "name": "Ibti Tech",
+    "email": "programacao@ibti.tech",
+    "url": "https://ibti.tech/"
+  },
+  "bugs": {
+    "url": "https://github.com/NinjaAzul/ibti-design-system-libs/issues"
+  },
+  "homepage": "https://github.com/NinjaAzul/ibti-design-system-libs#readme"
 }
