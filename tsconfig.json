@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@Application/*": ["./src/*"]
+      "@Application/*": ["./src/*"],
+      "@ibti/*": ["./@ibti/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
