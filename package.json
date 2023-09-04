@@ -1,5 +1,5 @@
 {
-  "name": "@ibti-tech/design-system",
+  "name": "@~erickzic/design-system",
   "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
