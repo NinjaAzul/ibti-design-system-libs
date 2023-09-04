@@ -1,4 +1,4 @@
-import { Button } from "@Application/ibti/components";
+import { Button } from "../@ibti/components";
 
 export default function Home() {
   return (
